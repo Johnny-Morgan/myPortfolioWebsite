@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 *{
     box-sizing: border-box;
@@ -35,7 +36,8 @@ h3{
 
 a {
     color: #fff;
-    text-decoration: none;   
+    text-decoration: none; 
+    
 }
 
 header{
@@ -62,6 +64,11 @@ main{
             &:hover{
                 color: $secondary-color;
                 @include easeOut();
+            }
+            // Hide facebook & twitter icons
+            .fa-facebook, 
+            .fa-twitter{
+                opacity: 1;
             }
         }
     }
